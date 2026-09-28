@@ -116,12 +116,13 @@ Three connection profiles were evaluated to ensure correctness:
 \end{enumerate}
 
 \section{Conclusion and Submission Information}
-The vulnerabilities highlighted by the initial server review have been systematically mitigated using modular symmetric cryptographic architectures and structural interface firewall boundaries. 
+The vulnerabilities highlighted by the initial server security review—specifically weak staff authentication, unsegmented guest paths, and unencrypted cross-campus communications—have been systematically mitigated. By combining robust symmetric encryption (Fernet standard) and SHA-256 integrity verification with strategic interface-based Netfilter/iptables firewall boundaries, the central student records platform has been hardened against both internal guest network exposures and active external probing. 
 
-The complete version-controlled implementation project repository can be found online at the following location:
+The complete version-controlled implementation project repository, including code, test logs, and configuration files, can be verified online at the following location:
 
 \begin{center}
-\url{https://github.com}
+\url{https://github.com/NoelaMiniG/cryptography-network-security-exam}
 \end{center}
+
 
 \end{document}
