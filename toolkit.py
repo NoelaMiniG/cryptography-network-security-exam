@@ -88,6 +88,13 @@ def main():
     # 3. Run decryption
     decrypt_student_records(encrypted_file, decrypted_file, fernet_cipher)
     
+    # Read and print the decrypted content directly to the terminal screen
+    print("\n--- Decrypted File Contents ---")
+    with open(decrypted_file, "r") as f:
+        print(f.read())
+    print("--------------------------------\n")
+
+    
     # 4. Calculate decrypted file hash and verify integrity
     hash_after = get_file_hash(decrypted_file)
     print(f"Decrypted File SHA-256: {hash_after}")
